@@ -65,7 +65,7 @@ public class BaseTest {
 	 */
 	@BeforeClass
 	protected void setup() {
-		String chromeDriverPath = "/usr/bin/";
+		String chromeDriverPath = "/usr/bin/chromedriver";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 //		WebDriverManager.chromedriver().setup();
 //		ChromeOptions ops = new ChromeOptions();
