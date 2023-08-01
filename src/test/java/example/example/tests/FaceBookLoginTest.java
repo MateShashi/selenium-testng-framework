@@ -20,5 +20,6 @@ public class FaceBookLoginTest extends BaseTest {
 		FacebookLoginPage facebookLoginPage = PageinstancesFactory.getInstance(FacebookLoginPage.class);
 		facebookLoginPage.enterEmail("abc").enterPassword("abc").clickSignIn();
 		Assert.assertTrue(true, "Login failed : Test failed");
+		System.out.println("Test 2: Passed");
 	}
 }

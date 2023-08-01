@@ -3,6 +3,7 @@ package example.example.tests;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -66,6 +67,8 @@ public class BaseTest {
 	 */
 	@BeforeClass
 	protected void setup() {
+//		ChromeDriverManager.chromedriver().setup();
+//		driver = new ChromeDriver();
 		String chromeDriverPath = "/usr/bin/chromedriver";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		HashMap<String, Object> chromePrefs = new HashMap<>();
